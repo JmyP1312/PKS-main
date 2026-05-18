@@ -1,0 +1,6 @@
+/Users/lilyaka/Desktop/раб.тетради/пкс/Restaraunt_Table_Reservation/RestaurantConsoleApp/obj/Debug/net9.0/RestaurantConsoleApp.csproj.AssemblyReference.cache
+/Users/lilyaka/Desktop/раб.тетради/пкс/Restaraunt_Table_Reservation/RestaurantConsoleApp/obj/Debug/net9.0/RestaurantConsoleApp.GeneratedMSBuildEditorConfig.editorconfig
+/Users/lilyaka/Desktop/раб.тетради/пкс/Restaraunt_Table_Reservation/RestaurantConsoleApp/obj/Debug/net9.0/RestaurantConsoleApp.AssemblyInfoInputs.cache
+/Users/lilyaka/Desktop/раб.тетради/пкс/Restaraunt_Table_Reservation/RestaurantConsoleApp/obj/Debug/net9.0/RestaurantConsoleApp.AssemblyInfo.cs
+/Users/lilyaka/Desktop/раб.тетради/пкс/Restaraunt_Table_Reservation/RestaurantConsoleApp/obj/Debug/net9.0/RestaurantConsoleApp.csproj.CoreCompileInputs.cache
+/Users/lilyaka/Desktop/раб.тетради/пкс/Restaraunt_Table_Reservation/RestaurantConsoleApp/obj/Debug/net9.0/RestaurantConsoleApp.sourcelink.json

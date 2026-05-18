@@ -1,0 +1,14 @@
+/Users/lilyaka/Desktop/раб.тетради/пкс/kr2/MatrixCalculator/bin/Debug/net9.0/MatrixCalculator
+/Users/lilyaka/Desktop/раб.тетради/пкс/kr2/MatrixCalculator/bin/Debug/net9.0/MatrixCalculator.deps.json
+/Users/lilyaka/Desktop/раб.тетради/пкс/kr2/MatrixCalculator/bin/Debug/net9.0/MatrixCalculator.runtimeconfig.json
+/Users/lilyaka/Desktop/раб.тетради/пкс/kr2/MatrixCalculator/bin/Debug/net9.0/MatrixCalculator.dll
+/Users/lilyaka/Desktop/раб.тетради/пкс/kr2/MatrixCalculator/bin/Debug/net9.0/MatrixCalculator.pdb
+/Users/lilyaka/Desktop/раб.тетради/пкс/kr2/MatrixCalculator/obj/Debug/net9.0/MatrixCalculator.GeneratedMSBuildEditorConfig.editorconfig
+/Users/lilyaka/Desktop/раб.тетради/пкс/kr2/MatrixCalculator/obj/Debug/net9.0/MatrixCalculator.AssemblyInfoInputs.cache
+/Users/lilyaka/Desktop/раб.тетради/пкс/kr2/MatrixCalculator/obj/Debug/net9.0/MatrixCalculator.AssemblyInfo.cs
+/Users/lilyaka/Desktop/раб.тетради/пкс/kr2/MatrixCalculator/obj/Debug/net9.0/MatrixCalculator.csproj.CoreCompileInputs.cache
+/Users/lilyaka/Desktop/раб.тетради/пкс/kr2/MatrixCalculator/obj/Debug/net9.0/MatrixCalculator.dll
+/Users/lilyaka/Desktop/раб.тетради/пкс/kr2/MatrixCalculator/obj/Debug/net9.0/refint/MatrixCalculator.dll
+/Users/lilyaka/Desktop/раб.тетради/пкс/kr2/MatrixCalculator/obj/Debug/net9.0/MatrixCalculator.pdb
+/Users/lilyaka/Desktop/раб.тетради/пкс/kr2/MatrixCalculator/obj/Debug/net9.0/MatrixCalculator.genruntimeconfig.cache
+/Users/lilyaka/Desktop/раб.тетради/пкс/kr2/MatrixCalculator/obj/Debug/net9.0/ref/MatrixCalculator.dll

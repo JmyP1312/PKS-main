@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "dgSpecHash": "C8B/URB0SdA=",
+  "success": true,
+  "projectFilePath": "/Users/deniskosourov/Downloads/PKS-main/sem2/kr/kr5/kr5.csproj",
+  "expectedPackageFiles": [
+    "/Users/deniskosourov/.nuget/packages/microsoft.data.sqlite.core/9.0.0/microsoft.data.sqlite.core.9.0.0.nupkg.sha512",
+    "/Users/deniskosourov/.nuget/packages/microsoft.entityframeworkcore/9.0.0/microsoft.entityframeworkcore.9.0.0.nupkg.sha512",
+    "/Users/deniskosourov/.nuget/packages/microsoft.entityframeworkcore.abstractions/9.0.0/microsoft.entityframeworkcore.abstractions.9.0.0.nupkg.sha512",
+    "/Users/deniskosourov/.nuget/packages/microsoft.entityframeworkcore.analyzers/9.0.0/microsoft.entityframeworkcore.analyzers.9.0.0.nupkg.sha512",
+    "/Users/deniskosourov/.nuget/packages/microsoft.entityframeworkcore.relational/9.0.0/microsoft.entityframeworkcore.relational.9.0.0.nupkg.sha512",
+    "/Users/deniskosourov/.nuget/packages/microsoft.entityframeworkcore.sqlite/9.0.0/microsoft.entityframeworkcore.sqlite.9.0.0.nupkg.sha512",
+    "/Users/deniskosourov/.nuget/packages/microsoft.entityframeworkcore.sqlite.core/9.0.0/microsoft.entityframeworkcore.sqlite.core.9.0.0.nupkg.sha512",
+    "/Users/deniskosourov/.nuget/packages/microsoft.extensions.dependencymodel/9.0.0/microsoft.extensions.dependencymodel.9.0.0.nupkg.sha512",
+    "/Users/deniskosourov/.nuget/packages/sqlitepclraw.bundle_e_sqlite3/2.1.10/sqlitepclraw.bundle_e_sqlite3.2.1.10.nupkg.sha512",
+    "/Users/deniskosourov/.nuget/packages/sqlitepclraw.core/2.1.10/sqlitepclraw.core.2.1.10.nupkg.sha512",
+    "/Users/deniskosourov/.nuget/packages/sqlitepclraw.lib.e_sqlite3/2.1.10/sqlitepclraw.lib.e_sqlite3.2.1.10.nupkg.sha512",
+    "/Users/deniskosourov/.nuget/packages/sqlitepclraw.provider.e_sqlite3/2.1.10/sqlitepclraw.provider.e_sqlite3.2.1.10.nupkg.sha512"
+  ],
+  "logs": []
+}

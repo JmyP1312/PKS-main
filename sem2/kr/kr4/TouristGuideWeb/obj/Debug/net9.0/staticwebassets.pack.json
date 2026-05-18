@@ -1,0 +1,97 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/images/324671d930c2c6b747910a712de92692.webp",
+      "PackagePath": "staticwebassets/images/324671d930c2c6b747910a712de92692.webp"
+    },
+    {
+      "Id": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/images/4646af3618e50dcf2cbddfb325446f11.webp",
+      "PackagePath": "staticwebassets/images/4646af3618e50dcf2cbddfb325446f11.webp"
+    },
+    {
+      "Id": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/images/Coat_of_Arms_of_Vladivostok.svg.png",
+      "PackagePath": "staticwebassets/images/Coat_of_Arms_of_Vladivostok.svg.png"
+    },
+    {
+      "Id": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/images/Coat_of_arms_of_Moscow.svg.png",
+      "PackagePath": "staticwebassets/images/Coat_of_arms_of_Moscow.svg.png"
+    },
+    {
+      "Id": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/images/christ_savior.jpg",
+      "PackagePath": "staticwebassets/images/christ_savior.jpg"
+    },
+    {
+      "Id": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/images/fort.jpg",
+      "PackagePath": "staticwebassets/images/fort.jpg"
+    },
+    {
+      "Id": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/images/hermitage.jpg",
+      "PackagePath": "staticwebassets/images/hermitage.jpg"
+    },
+    {
+      "Id": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/images/images.png",
+      "PackagePath": "staticwebassets/images/images.png"
+    },
+    {
+      "Id": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/images/isaac.jpg",
+      "PackagePath": "staticwebassets/images/isaac.jpg"
+    },
+    {
+      "Id": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/images/kazan_kremlin.jpg",
+      "PackagePath": "staticwebassets/images/kazan_kremlin.jpg"
+    },
+    {
+      "Id": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/images/kremlin.jpg",
+      "PackagePath": "staticwebassets/images/kremlin.jpg"
+    },
+    {
+      "Id": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/images/kul_sharif.jpg",
+      "PackagePath": "staticwebassets/images/kul_sharif.jpg"
+    },
+    {
+      "Id": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/images/moscow.jpg",
+      "PackagePath": "staticwebassets/images/moscow.jpg"
+    },
+    {
+      "Id": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/images/palace_square.jpg",
+      "PackagePath": "staticwebassets/images/palace_square.jpg"
+    },
+    {
+      "Id": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/images/red_square.jpg",
+      "PackagePath": "staticwebassets/images/red_square.jpg"
+    },
+    {
+      "Id": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/images/russian_bridge.jpg",
+      "PackagePath": "staticwebassets/images/russian_bridge.jpg"
+    },
+    {
+      "Id": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/images/vladivostok.jpg",
+      "PackagePath": "staticwebassets/images/vladivostok.jpg"
+    },
+    {
+      "Id": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/images/Снимок экрана 2026-05-05 в 10.23.55\u202FAM.png",
+      "PackagePath": "staticwebassets/images/Снимок экрана 2026-05-05 в 10.23.55\u202FAM.png"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.TouristGuideWeb.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.TouristGuideWeb.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.build.TouristGuideWeb.props",
+      "PackagePath": "build\\TouristGuideWeb.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.buildMultiTargeting.TouristGuideWeb.props",
+      "PackagePath": "buildMultiTargeting\\TouristGuideWeb.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.buildTransitive.TouristGuideWeb.props",
+      "PackagePath": "buildTransitive\\TouristGuideWeb.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,76 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="LibraryManager.Views.GenresWindow"
+        Title="Управление жанрами" Height="480" Width="760"
+        WindowStartupLocation="CenterOwner"
+        Background="#1E1E1E">
+    <Grid Margin="12">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="12"/>
+            <ColumnDefinition Width="320"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Левая панель: список жанров -->
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Grid.Row="0" Text="Список жанров" FontSize="16" FontWeight="Bold" Margin="0,0,0,8"/>
+
+            <DataGrid Grid.Row="1"
+                      ItemsSource="{Binding Genres}"
+                      SelectedItem="{Binding SelectedGenre}"
+                      IsReadOnly="True"
+                      AutoGenerateColumns="False"
+                      CanUserResizeColumns="True"
+                      GridLinesVisibility="Horizontal"
+                      BorderThickness="1" BorderBrush="#CCCCCC">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Название" Binding="{Binding Name}" Width="*"/>
+                    <DataGridTextColumn Header="Описание" Binding="{Binding Description}" Width="2*"/>
+                </DataGrid.Columns>
+            </DataGrid>
+
+            <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="0,8,0,0">
+                <Button Content="Добавить" Width="100" Height="32" Margin="0,0,8,0"
+                        Command="{Binding AddGenreCommand}" Background="#2196F3" Foreground="White"/>
+                <Button Content="Удалить" Width="100" Height="32"
+                        Command="{Binding DeleteGenreCommand}" Background="#F44336" Foreground="White"/>
+            </StackPanel>
+        </Grid>
+
+        <!-- Правая панель: форма редактирования -->
+        <Border Grid.Column="2" BorderBrush="#CCCCCC" BorderThickness="1" CornerRadius="4" Padding="16">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <TextBlock Grid.Row="0" Text="Редактирование жанра" FontSize="14" FontWeight="Bold" Margin="0,0,0,12"/>
+
+                <TextBlock Grid.Row="1" Text="Название:" Margin="0,0,0,4" FontWeight="Bold"/>
+                <TextBox Grid.Row="2" Text="{Binding Name}" Height="32" Padding="8,4" Margin="0,0,0,10"/>
+
+                <TextBlock Grid.Row="3" Text="Описание:" Margin="0,0,0,4" FontWeight="Bold"/>
+                <TextBox Grid.Row="4" Text="{Binding Description}"
+                         AcceptsReturn="True" TextWrapping="Wrap"
+                         Height="100" Padding="8,6" Margin="0,0,0,10"/>
+
+                <StackPanel Grid.Row="6" Orientation="Horizontal" HorizontalAlignment="Right">
+                    <Button Content="Сохранить" Width="100" Height="32" Margin="0,0,8,0"
+                            Command="{Binding SaveGenreCommand}" Background="#4CAF50" Foreground="White"/>
+                </StackPanel>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

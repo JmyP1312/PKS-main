@@ -1,0 +1,72 @@
+@model TouristGuideWeb.Models.City
+@{
+    ViewData["Title"] = Model.Name;
+}
+
+<div style="margin-bottom: 1rem;">
+    <a asp-action="Index" style="color: var(--c-secret-soul); text-decoration: none;">Назад к списку городов</a>
+</div>
+
+<div class="info-block">
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: start;">
+        <div>
+            <img src="@Model.ImageUrl" alt="@Model.Name" style="width: 100%; height: 300px; object-fit: cover; border-radius: 10px;" onerror="this.style.display='none';" />
+            <div class="fallback-block" style="height: 300px; border-radius: 10px; font-size: 1.5rem;">
+                @Model.Name
+            </div>
+        </div>
+        <div>
+            <div class="city-head">
+                <h1 style="margin-bottom: 0;">@Model.Name</h1>
+                <img src="@Model.CoatOfArmsUrl" alt="Герб @Model.Name" class="coat-of-arms" style="width: 88px; height: 106px;" onerror="this.style.display='none';" />
+            </div>
+            <p style="margin-bottom: 0.5rem;"><strong>Регион:</strong> @Model.Region</p>
+            <p style="margin-bottom: 0.5rem;"><strong>Население:</strong> @Model.Population.ToString("N0") человек</p>
+            <p style="margin-bottom: 1rem;"><strong>Достопримечательностей:</strong> @Model.Attractions.Count()</p>
+            <p style="color: #555;">@Model.Description</p>
+        </div>
+    </div>
+</div>
+
+<div class="info-block">
+    <h2 style="margin-bottom: 1rem;">История</h2>
+    <p>@Model.History</p>
+</div>
+
+<div class="info-block">
+    <h2 style="margin-bottom: 1rem;">Достопримечательности</h2>
+    
+    @if (Model.Attractions.Any())
+    {
+        <div class="grid">
+            @foreach (var attraction in Model.Attractions)
+            {
+                <div class="card">
+                    <img src="@attraction.ImageUrl" alt="@attraction.Name" style="height: 150px;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                    <div class="fallback-block" style="height: 150px; display: none; font-size: 0.9rem;">
+                        @attraction.Name
+                    </div>
+                    <div class="card-body">
+                        <h4 style="margin-bottom: 0.5rem;">@attraction.Name</h4>
+                        <p style="color: #666; font-size: 0.85rem; margin-bottom: 0.5rem;">
+                            @if (attraction.TicketPrice.HasValue && attraction.TicketPrice > 0)
+                            {
+                                <span>Стоимость: @attraction.TicketPrice руб.</span>
+                            }
+                            else
+                            {
+                                <span>Бесплатно</span>
+                            }
+                        </p>
+                        <p style="margin-bottom: 1rem; font-size: 0.9rem;">@attraction.Description</p>
+                        <a asp-controller="Attractions" asp-action="Details" asp-route-id="@attraction.Id" class="btn">Подробнее</a>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+    else
+    {
+        <p style="color: #666;">В этом городе пока нет достопримечательностей.</p>
+    }
+</div>

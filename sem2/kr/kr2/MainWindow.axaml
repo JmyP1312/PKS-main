@@ -1,0 +1,216 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="1200" d:DesignHeight="760"
+        x:Class="NetworkAnalyzer.MainWindow"
+        Title="Анализатор сетевых подключений"
+        Width="1200"
+        Height="760"
+        MinWidth="980"
+        MinHeight="640"
+        Background="#EEF2F7"
+        FontFamily="Trebuchet MS, Segoe UI, Sans-Serif">
+    <Window.Resources>
+        <LinearGradientBrush x:Key="HeroBrush" StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#0F766E" Offset="0.0"/>
+            <GradientStop Color="#155E75" Offset="1.0"/>
+        </LinearGradientBrush>
+        <SolidColorBrush x:Key="CardBrush" Color="#FAFCFF"/>
+        <SolidColorBrush x:Key="SoftBrush" Color="#F2F7FB"/>
+        <SolidColorBrush x:Key="TextMainBrush" Color="#0F172A"/>
+        <SolidColorBrush x:Key="TextMutedBrush" Color="#475569"/>
+    </Window.Resources>
+
+    <Window.Styles>
+        <Style Selector="Button">
+            <Setter Property="Padding" Value="14,9"/>
+            <Setter Property="CornerRadius" Value="10"/>
+            <Setter Property="Background" Value="#E2E8F0"/>
+            <Setter Property="Foreground" Value="#242a38"/>
+            <Setter Property="BorderBrush" Value="#CBD5E1"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+        </Style>
+        <Style Selector="Button:pointerover /template/ ContentPresenter">
+            <Setter Property="Background" Value="#CBD5E1"/>
+        </Style>
+        <Style Selector="Button.accent">
+            <Setter Property="Background" Value="#0F766E"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderBrush" Value="#0D635D"/>
+        </Style>
+        <Style Selector="Button.accent:pointerover /template/ ContentPresenter">
+            <Setter Property="Background" Value="#0D9488"/>
+        </Style>
+        <Style Selector="Button.danger">
+            <Setter Property="Background" Value="#FEE2E2"/>
+            <Setter Property="Foreground" Value="#991B1B"/>
+            <Setter Property="BorderBrush" Value="#FCA5A5"/>
+        </Style>
+        <Style Selector="Button.danger:pointerover /template/ ContentPresenter">
+            <Setter Property="Background" Value="#FECACA"/>
+        </Style>
+        <Style Selector="Button.url-clear">
+            <Setter Property="Width" Value="22"/>
+            <Setter Property="Height" Value="22"/>
+            <Setter Property="MinWidth" Value="22"/>
+            <Setter Property="Padding" Value="0"/>
+            <Setter Property="CornerRadius" Value="11"/>
+            <Setter Property="Background" Value="#E7EEF7"/>
+            <Setter Property="Foreground" Value="#4A6078"/>
+            <Setter Property="BorderBrush" Value="#C6D6E7"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+        </Style>
+        <Style Selector="Button.url-clear:pointerover /template/ ContentPresenter">
+            <Setter Property="Background" Value="#D3E2F2"/>
+        </Style>
+        <Style Selector="Button.url-clear:pressed /template/ ContentPresenter">
+            <Setter Property="Background" Value="#C4D7EC"/>
+        </Style>
+        <Style Selector="TextBox">
+            <Setter Property="CornerRadius" Value="10"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="BorderBrush" Value="#CBD5E1"/>
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="Foreground" Value="#303134"/>
+            <Setter Property="SelectionBrush" Value="#CFE0F2"/>
+            <Setter Property="SelectionForegroundBrush" Value="#0F172A"/>
+            <Setter Property="Padding" Value="10,8"/>
+        </Style>
+        <Style Selector="TextBox /template/ ScrollViewer#PART_ScrollViewer">
+            <Setter Property="Background" Value="#FFFFFF"/>
+        </Style>
+        <Style Selector="TextBox:focus">
+            <Setter Property="Background" Value="#F8FBFF"/>
+            <Setter Property="BorderBrush" Value="#9DB7D6"/>
+        </Style>
+        <Style Selector="TextBox:focus /template/ ScrollViewer#PART_ScrollViewer">
+            <Setter Property="Background" Value="#F8FBFF"/>
+        </Style>
+        <Style Selector="ListBox">
+            <Setter Property="Background" Value="#FFFFFF"/>
+            <Setter Property="BorderBrush" Value="#D7E0EA"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="CornerRadius" Value="10"/>
+            <Setter Property="Padding" Value="6"/>
+        </Style>
+        <Style Selector="ListBoxItem:pointerover /template/ ContentPresenter">
+            <Setter Property="Background" Value="#E8F0F8"/>
+        </Style>
+        <Style Selector="ListBoxItem:selected /template/ ContentPresenter">
+            <Setter Property="Background" Value="#262a2f"/>
+        </Style>
+        <Style Selector="ListBoxItem:selected:pointerover /template/ ContentPresenter">
+            <Setter Property="Background" Value="#2d3237"/>
+        </Style>
+        <Style Selector="ListBox#HistoryListBox ListBoxItem:pointerover /template/ ContentPresenter">
+            <Setter Property="Background" Value="#C6D9EC"/>
+        </Style>
+        <Style Selector="ListBox#HistoryListBox ListBoxItem:selected /template/ ContentPresenter">
+            <Setter Property="Background" Value="#ADC8E2"/>
+        </Style>
+        <Style Selector="ListBox#HistoryListBox ListBoxItem:selected:pointerover /template/ ContentPresenter">
+            <Setter Property="Background" Value="#97B9DA"/>
+        </Style>
+    </Window.Styles>
+
+    <Grid RowDefinitions="Auto,*,Auto" ColumnDefinitions="*" Margin="18" RowSpacing="14">
+        <Border Background="{StaticResource HeroBrush}" CornerRadius="18" Padding="18" BoxShadow="0 8 22 0 #22415A77">
+            <Grid ColumnDefinitions="*,Auto" ColumnSpacing="12">
+                <StackPanel>
+                    <TextBlock Text="Анализатор сетевых подключений" FontSize="26" FontWeight="Bold" Foreground="White"/>
+                    <TextBlock Text="Интерфейсы • URL/URI • DNS • Ping" Foreground="#D6F2EE" Margin="0,6,0,0" FontSize="14"/>
+                </StackPanel>
+            </Grid>
+        </Border>
+
+        <Grid Grid.Row="1" ColumnDefinitions="2*,3*" ColumnSpacing="14">
+            <Border Grid.Column="0" Background="{StaticResource CardBrush}" CornerRadius="14" Padding="14" BoxShadow="0 3 10 0 #1A334155">
+                <Grid RowDefinitions="Auto,*,Auto" RowSpacing="12">
+                    <Grid ColumnDefinitions="*,Auto" ColumnSpacing="10">
+                        <TextBlock Text="Сетевые интерфейсы" FontSize="18" FontWeight="SemiBold" Foreground="{StaticResource TextMainBrush}" VerticalAlignment="Center"/>
+                        <Button Grid.Column="1" Classes="accent" Content="Обновить" Click="RefreshInterfacesClick"/>
+                    </Grid>
+
+                    <ListBox x:Name="InterfacesListBox"
+                             Grid.Row="1"
+                             SelectionChanged="InterfacesSelectionChanged">
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <Border Background="#F8FBFF" CornerRadius="8" Padding="8" Margin="2">
+                                    <StackPanel Spacing="2">
+                                        <TextBlock Text="{Binding Name}" FontWeight="SemiBold" Foreground="{StaticResource TextMainBrush}"/>
+                                        <TextBlock Text="{Binding QuickInfo}" FontSize="12" Foreground="{StaticResource TextMutedBrush}"/>
+                                    </StackPanel>
+                                </Border>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
+
+                    <Border Grid.Row="2" Background="{StaticResource SoftBrush}" CornerRadius="10" Padding="10">
+                        <StackPanel Spacing="4">
+                            <TextBlock Text="Информация о выбранном интерфейсе" FontWeight="SemiBold" Foreground="{StaticResource TextMainBrush}"/>
+                            <TextBlock x:Name="SelectedInterfaceDetails" TextWrapping="Wrap" FontFamily="Cascadia Mono, Consolas" FontSize="13" Foreground="{StaticResource TextMainBrush}"/>
+                        </StackPanel>
+                    </Border>
+                </Grid>
+            </Border>
+
+            <Border Grid.Column="1" Background="{StaticResource CardBrush}" CornerRadius="14" Padding="14" BoxShadow="0 3 10 0 #1A334155">
+                <Grid RowDefinitions="Auto,Auto,Auto,*" RowSpacing="12">
+                    <TextBlock Text="Проверка URL/URI" FontWeight="SemiBold" FontSize="18" Foreground="{StaticResource TextMainBrush}"/>
+
+                    <Grid Grid.Row="1" ColumnDefinitions="*,Auto,Auto,Auto" ColumnSpacing="8">
+                        <Grid>
+                            <TextBox x:Name="UrlInputTextBox"
+                                     Padding="10,8,36,8"
+                                     Watermark="Введите URL, например: https://example.com:8080/path?a=1#part"/>
+                                <Button Classes="url-clear"
+                                        Content="✕"
+                                    HorizontalAlignment="Right"
+                                    VerticalAlignment="Center"
+                                    Margin="0,0,8,0"
+                                    ToolTip.Tip="Очистить поле URL"
+                                    Click="ClearInputClick"/>
+                        </Grid>
+                        <Button Grid.Column="1" Classes="accent" Content="Анализ" Click="AnalyzeUrlClick"/>
+                        <Button Grid.Column="2" Content="Ping" Click="PingHostClick"/>
+                        <Button Grid.Column="3" Content="DNS" Click="ResolveDnsClick"/>
+                    </Grid>
+
+                    <Border Grid.Row="2" Background="{StaticResource SoftBrush}" CornerRadius="10" Padding="10">
+                        <StackPanel>
+                            <TextBlock Text="Результаты анализа" FontWeight="SemiBold" Margin="0,0,0,6" Foreground="{StaticResource TextMainBrush}"/>
+                            <TextBox x:Name="ResultTextBox"
+                                     IsReadOnly="True"
+                                     AcceptsReturn="True"
+                                     TextWrapping="Wrap"
+                                     MinHeight="190"
+                                     ScrollViewer.VerticalScrollBarVisibility="Auto"
+                                     FontFamily="Cascadia Mono, Consolas"
+                                     FontSize="13"/>
+                        </StackPanel>
+                    </Border>
+
+                    <Border Grid.Row="3" Background="{StaticResource SoftBrush}" CornerRadius="10" Padding="10">
+                        <Grid RowDefinitions="Auto,*" RowSpacing="8">
+                            <Grid ColumnDefinitions="*,Auto" ColumnSpacing="8">
+                                <TextBlock Text="История проверенных URL" FontWeight="SemiBold" VerticalAlignment="Center" Foreground="{StaticResource TextMainBrush}"/>
+                                <Button Grid.Column="1" Classes="danger" Content="Очистить" Click="ClearHistoryClick"/>
+                            </Grid>
+                            <ListBox x:Name="HistoryListBox" Grid.Row="1"
+                                     SelectionChanged="HistorySelectionChanged"
+                                     Foreground="{StaticResource TextMainBrush}"
+                                     ScrollViewer.VerticalScrollBarVisibility="Auto"/>
+                        </Grid>
+                    </Border>
+                </Grid>
+            </Border>
+        </Grid>
+    </Grid>
+</Window>

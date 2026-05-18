@@ -1,0 +1,94 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="LibraryManager.Views.BookEditWindow"
+        Title="Редактирование книги" Height="580" Width="520"
+        WindowStartupLocation="CenterOwner"
+        CanResize="False"
+        Background="#1E1E1E">
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Text="Название:" Margin="0,0,0,4" FontWeight="Bold"/>
+        <TextBox Grid.Row="1" Text="{Binding Title}"
+                 Height="32" Padding="8,4" Margin="0,0,0,10"/>
+
+        <TextBlock Grid.Row="2" Text="ISBN:" Margin="0,0,0,4" FontWeight="Bold"/>
+        <TextBox Grid.Row="3" Text="{Binding ISBN}"
+                 Height="32" Padding="8,4" Margin="0,0,0,10"/>
+
+        <Grid Grid.Row="4" Margin="0,0,0,10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="16"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Grid.Column="0">
+                <TextBlock Text="Год публикации:" Margin="0,0,0,4" FontWeight="Bold"/>
+                <TextBox Text="{Binding PublishYear}" Height="32" Padding="8,4"/>
+            </StackPanel>
+
+            <StackPanel Grid.Column="2">
+                <TextBlock Text="Количество в наличии:" Margin="0,0,0,4" FontWeight="Bold"/>
+                <TextBox Text="{Binding QuantityInStock}" Height="32" Padding="8,4"/>
+            </StackPanel>
+        </Grid>
+
+        <!-- Авторы (мультивыбор) -->
+        <TextBlock Grid.Row="5" Text="Авторы (можно выбрать несколько):"
+                   Margin="0,0,0,4" FontWeight="Bold"/>
+        <Border Grid.Row="6" BorderBrush="#555" BorderThickness="1" CornerRadius="4"
+                Height="110" Margin="0,0,0,10">
+            <ListBox ItemsSource="{Binding SelectableAuthors}"
+                     Background="Transparent"
+                     ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <CheckBox IsChecked="{Binding IsSelected}"
+                                  Content="{Binding Item.FullName}"
+                                  Margin="4,2"/>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </Border>
+
+        <!-- Жанры (мультивыбор) -->
+        <TextBlock Grid.Row="7" Text="Жанры (можно выбрать несколько):"
+                   Margin="0,0,0,4" FontWeight="Bold"/>
+        <Border Grid.Row="8" BorderBrush="#555" BorderThickness="1" CornerRadius="4"
+                Height="110" Margin="0,0,0,16">
+            <ListBox ItemsSource="{Binding SelectableGenres}"
+                     Background="Transparent"
+                     ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <CheckBox IsChecked="{Binding IsSelected}"
+                                  Content="{Binding Item.Name}"
+                                  Margin="4,2"/>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </Border>
+
+        <StackPanel Grid.Row="12" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button Content="Сохранить" Width="110" Height="34" Margin="0,0,10,0"
+                    Command="{Binding SaveCommand}" Background="#4CAF50" Foreground="White"/>
+            <Button Content="Отмена" Width="110" Height="34"
+                    Command="{Binding CancelCommand}" Background="#757575" Foreground="White"/>
+        </StackPanel>
+    </Grid>
+</Window>

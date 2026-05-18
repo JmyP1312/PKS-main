@@ -1,0 +1,66 @@
+@model TouristGuideWeb.Models.Attraction
+@{
+    ViewData["Title"] = Model.Name;
+}
+
+<div style="margin-bottom: 1rem;">
+    @if (Model.City != null)
+    {
+        <a asp-controller="Cities" asp-action="Details" asp-route-id="@Model.CityId" style="color: var(--c-secret-soul); text-decoration: none;">Назад к @Model.City.Name</a>
+    }
+    else
+    {
+        <a asp-controller="Cities" asp-action="Index" style="color: var(--c-secret-soul); text-decoration: none;">Назад к списку городов</a>
+    }
+</div>
+
+<div class="info-block">
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: start;">
+        <div>
+            <img src="@Model.ImageUrl" alt="@Model.Name" style="width: 100%; height: 350px; object-fit: cover; border-radius: 10px;" onerror="this.style.display='none';" />
+            <div class="fallback-block" style="height: 350px; border-radius: 10px; font-size: 1.2rem;">
+                @Model.Name
+            </div>
+        </div>
+        <div>
+            <h1 style="margin-bottom: 1rem;">@Model.Name</h1>
+            
+            @if (Model.City != null)
+            {
+                <p style="margin-bottom: 0.5rem;">
+                    <strong>Город:</strong> 
+                    <a asp-controller="Cities" asp-action="Details" asp-route-id="@Model.CityId" style="color: var(--c-secret-soul);">
+                        @Model.City.Name
+                    </a>
+                </p>
+            }
+            
+            <p style="margin-bottom: 0.5rem;">
+                <strong>Часы работы:</strong> @Model.WorkingHours
+            </p>
+            
+            <p style="margin-bottom: 1rem;">
+                <strong>Стоимость:</strong> 
+                @if (Model.TicketPrice.HasValue && Model.TicketPrice > 0)
+                {
+                    <span>@Model.TicketPrice руб.</span>
+                }
+                else
+                {
+                    <span style="color: var(--c-secret-soul); font-weight: bold;">Бесплатно</span>
+                }
+            </p>
+            
+            <p style="color: #555; font-size: 1.1rem;">@Model.Description</p>
+        </div>
+    </div>
+</div>
+
+<div class="info-block">
+    <h2 style="margin-bottom: 1rem;">История</h2>
+    <p style="line-height: 1.8;">@Model.History</p>
+</div>
+
+<div style="background: #eaf2fd; padding: 1.5rem; border-radius: 10px; margin-top: 1rem; border: 1px solid rgba(111, 175, 227, 0.25);">
+    <p style="margin-bottom: 0.5rem;"><strong>Совет:</strong> Перед посещением рекомендуем проверить актуальную информацию на официальном сайте.</p>
+</div>

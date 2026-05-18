@@ -1,0 +1,41 @@
+@model IEnumerable<TouristGuideWeb.Models.City>
+@{
+    ViewData["Title"] = "Города";
+}
+
+<h2 style="margin-bottom: 1.5rem;">Список городов</h2>
+
+<!--<form asp-action="Index" method="get" class="search-form">
+    <input type="text" name="searchString" placeholder="Поиск по названию города..." value="@ViewData["CurrentFilter"]" />
+    <button type="submit" class="btn">Поиск</button>
+    if (ViewData["CurrentFilter"] != null)
+    {
+        <a asp-action="Index" class="btn">Сбросить</a>
+    }
+</form>-->
+
+<div class="grid">
+    @foreach (var city in Model)
+    {
+        <div class="card">
+            <img src="@city.ImageUrl" alt="@city.Name" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="fallback-block" style="height: 200px; display: none;">
+                @city.Name
+            </div>
+            <div class="card-body">
+                <div class="city-head">
+                    <h3 style="margin-bottom: 0;">@city.Name</h3>
+                    <!--<img src="city.CoatOfArmsUrl" alt="Герб city.Name" class="coat-of-arms" onerror="this.style.display='none';" />-->
+                </div>
+                <p style="color: #666; font-size: 0.9rem; margin-bottom: 0.5rem;">
+                    <span class="badge">@city.Region</span>
+                </p>
+                <p style="color: #666; font-size: 0.85rem; margin-bottom: 0.5rem;">
+                    Население: @city.Population.ToString("N0") чел.
+                </p>
+                <p style="margin-bottom: 1rem;">@city.Description</p>
+                <a asp-action="Details" asp-route-id="@city.Id" class="btn">Подробнее</a>
+            </div>
+        </div>
+    }
+</div>

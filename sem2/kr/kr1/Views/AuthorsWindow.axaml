@@ -1,0 +1,83 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="LibraryManager.Views.AuthorsWindow"
+        Title="Управление авторами" Height="520" Width="860"
+        WindowStartupLocation="CenterOwner"
+        Background="#1E1E1E">
+    <Grid Margin="12">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="12"/>
+            <ColumnDefinition Width="340"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Левая панель: список авторов -->
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Grid.Row="0" Text="Список авторов" FontSize="16" FontWeight="Bold" Margin="0,0,0,8"/>
+
+            <DataGrid Grid.Row="1"
+                      ItemsSource="{Binding Authors}"
+                      SelectedItem="{Binding SelectedAuthor}"
+                      IsReadOnly="True"
+                      AutoGenerateColumns="False"
+                      CanUserResizeColumns="True"
+                      GridLinesVisibility="Horizontal"
+                      BorderThickness="1" BorderBrush="#CCCCCC">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Имя" Binding="{Binding FirstName}" Width="*"/>
+                    <DataGridTextColumn Header="Фамилия" Binding="{Binding LastName}" Width="*"/>
+                    <DataGridTextColumn Header="Дата рождения" Binding="{Binding BirthDate, StringFormat='{}{0:dd.MM.yyyy}'}" Width="140"/>
+                </DataGrid.Columns>
+            </DataGrid>
+
+            <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="0,8,0,0">
+                <Button Content="Добавить" Width="100" Height="32" Margin="0,0,8,0"
+                        Command="{Binding AddAuthorCommand}" Background="#2196F3" Foreground="White"/>
+                <Button Content="Удалить" Width="100" Height="32"
+                        Command="{Binding DeleteAuthorCommand}" Background="#F44336" Foreground="White"/>
+            </StackPanel>
+        </Grid>
+
+        <!-- Правая панель: форма редактирования -->
+        <Border Grid.Column="2" BorderBrush="#CCCCCC" BorderThickness="1" CornerRadius="4" Padding="16">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <TextBlock Grid.Row="0" Text="Редактирование автора" FontSize="14" FontWeight="Bold" Margin="0,0,0,12"/>
+
+                <TextBlock Grid.Row="1" Text="Имя:" Margin="0,0,0,4" FontWeight="Bold"/>
+                <TextBox Grid.Row="2" Text="{Binding FirstName}" Height="32" Padding="8,4" Margin="0,0,0,10"/>
+
+                <TextBlock Grid.Row="3" Text="Фамилия:" Margin="0,0,0,4" FontWeight="Bold"/>
+                <TextBox Grid.Row="4" Text="{Binding LastName}" Height="32" Padding="8,4" Margin="0,0,0,10"/>
+
+                <TextBlock Grid.Row="5" Text="Дата рождения:" Margin="0,0,0,4" FontWeight="Bold"/>
+                <CalendarDatePicker Grid.Row="6" SelectedDate="{Binding BirthDate}"
+                                    Height="32" Margin="0,0,0,16"
+                                    HorizontalAlignment="Stretch"/>
+
+                <StackPanel Grid.Row="9" Orientation="Horizontal" HorizontalAlignment="Right">
+                    <Button Content="Сохранить" Width="100" Height="32" Margin="0,0,8,0"
+                            Command="{Binding SaveAuthorCommand}" Background="#4CAF50" Foreground="White"/>
+                </StackPanel>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

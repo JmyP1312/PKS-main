@@ -1,0 +1,1876 @@
+{
+  "Version": 1,
+  "Hash": "Wwi2xhH/3sll7M8DysJ+qsSqA4TBJwiaxYo6BQ1qgYI=",
+  "Source": "TouristGuideWeb",
+  "BasePath": "_content/TouristGuideWeb",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "TouristGuideWeb/wwwroot",
+      "Source": "TouristGuideWeb",
+      "ContentRoot": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/",
+      "BasePath": "_content/TouristGuideWeb",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/images/324671d930c2c6b747910a712de92692.webp",
+      "SourceId": "TouristGuideWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/",
+      "BasePath": "_content/TouristGuideWeb",
+      "RelativePath": "images/324671d930c2c6b747910a712de92692#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "s1ec5ksa6a",
+      "Integrity": "IAcA90tsHvN4JWbIdjHPy5zF5KwoIY/4sBeq42Nri/U=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/324671d930c2c6b747910a712de92692.webp"
+    },
+    {
+      "Identity": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/images/4646af3618e50dcf2cbddfb325446f11.webp",
+      "SourceId": "TouristGuideWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/",
+      "BasePath": "_content/TouristGuideWeb",
+      "RelativePath": "images/4646af3618e50dcf2cbddfb325446f11#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "rgjqjfbfuo",
+      "Integrity": "9Rs9vAH5nseFg/pZ7SMGfquuKdWT3yEe40SQAMpOWz8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/4646af3618e50dcf2cbddfb325446f11.webp"
+    },
+    {
+      "Identity": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/images/Снимок экрана 2026-05-05 в 10.23.55\u202FAM.png",
+      "SourceId": "TouristGuideWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/",
+      "BasePath": "_content/TouristGuideWeb",
+      "RelativePath": "images/Снимок экрана 2026-05-05 в 10.23.55\u202FAM#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0n4nankmis",
+      "Integrity": "xMIB3pDivIDcrb6Iu41QB+ZsjDiX/WFmfTrYvPsV6Ng=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/Снимок экрана 2026-05-05 в 10.23.55\u202FAM.png"
+    },
+    {
+      "Identity": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/images/christ_savior.jpg",
+      "SourceId": "TouristGuideWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/",
+      "BasePath": "_content/TouristGuideWeb",
+      "RelativePath": "images/christ_savior#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "m39dwrftbm",
+      "Integrity": "rvRQ0BcKzem8mFuazhZDigxKSKVFUBdJDJtRUT+wSGI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/christ_savior.jpg"
+    },
+    {
+      "Identity": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/images/Coat_of_arms_of_Moscow.svg.png",
+      "SourceId": "TouristGuideWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/",
+      "BasePath": "_content/TouristGuideWeb",
+      "RelativePath": "images/Coat_of_arms_of_Moscow.svg#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "2l4acyvh2e",
+      "Integrity": "Skasp16TpUKpIOPjgNI860hXc1TQEFIfpRbYn2egbTk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/Coat_of_arms_of_Moscow.svg.png"
+    },
+    {
+      "Identity": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/images/Coat_of_Arms_of_Vladivostok.svg.png",
+      "SourceId": "TouristGuideWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/",
+      "BasePath": "_content/TouristGuideWeb",
+      "RelativePath": "images/Coat_of_Arms_of_Vladivostok.svg#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "o6bep6s71f",
+      "Integrity": "IEGRK+yNrWgqv5j2yh3AVpDh3w2aHGlR/UJ+rd34Zr8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/Coat_of_Arms_of_Vladivostok.svg.png"
+    },
+    {
+      "Identity": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/images/fort.jpg",
+      "SourceId": "TouristGuideWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/",
+      "BasePath": "_content/TouristGuideWeb",
+      "RelativePath": "images/fort#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "nnrjhhubzp",
+      "Integrity": "w0fOPcQkkeFVe0e+5FiXY9rDUe0dYvXP3s7hn8VT5g0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/fort.jpg"
+    },
+    {
+      "Identity": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/images/hermitage.jpg",
+      "SourceId": "TouristGuideWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/",
+      "BasePath": "_content/TouristGuideWeb",
+      "RelativePath": "images/hermitage#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vudkh8kgy6",
+      "Integrity": "J5TC4LZ/NnF7rC7GXHwISTUv5Hp7Lt8R+ZfNWV89Eeo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/hermitage.jpg"
+    },
+    {
+      "Identity": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/images/images.png",
+      "SourceId": "TouristGuideWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/",
+      "BasePath": "_content/TouristGuideWeb",
+      "RelativePath": "images/images#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ule0q20qwg",
+      "Integrity": "8mtCDosAL1hELdRh814XwbFRregCVnogv24UDcXYU9A=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/images.png"
+    },
+    {
+      "Identity": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/images/isaac.jpg",
+      "SourceId": "TouristGuideWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/",
+      "BasePath": "_content/TouristGuideWeb",
+      "RelativePath": "images/isaac#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "fnrrbnk7il",
+      "Integrity": "RZRGsRtfVDqezagRQ1EG/HCJeSrN3Cvuh9zTSAXkDGI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/isaac.jpg"
+    },
+    {
+      "Identity": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/images/kazan_kremlin.jpg",
+      "SourceId": "TouristGuideWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/",
+      "BasePath": "_content/TouristGuideWeb",
+      "RelativePath": "images/kazan_kremlin#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "2im233un6u",
+      "Integrity": "lrIHuwPC6TDxyA6Kwd2/zY3kgU9wJ7pDu3WNGqHOxak=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/kazan_kremlin.jpg"
+    },
+    {
+      "Identity": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/images/kremlin.jpg",
+      "SourceId": "TouristGuideWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/",
+      "BasePath": "_content/TouristGuideWeb",
+      "RelativePath": "images/kremlin#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "kel5gs2erj",
+      "Integrity": "nJtE9O+eDF1ZJJh6yOHrslGC+4iaGUuo/vw29iLr4uU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/kremlin.jpg"
+    },
+    {
+      "Identity": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/images/kul_sharif.jpg",
+      "SourceId": "TouristGuideWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/",
+      "BasePath": "_content/TouristGuideWeb",
+      "RelativePath": "images/kul_sharif#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "90u9cx5i4f",
+      "Integrity": "1396aZAZ3pP0d7MsDfh/v64TEJ9KXcaX7evjyA2sZhk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/kul_sharif.jpg"
+    },
+    {
+      "Identity": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/images/moscow.jpg",
+      "SourceId": "TouristGuideWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/",
+      "BasePath": "_content/TouristGuideWeb",
+      "RelativePath": "images/moscow#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "xkl72dyf8u",
+      "Integrity": "/yAHj5QhqLHZtRrymv6CmT/lyXNW8B2PfKrmp0KCfIk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/moscow.jpg"
+    },
+    {
+      "Identity": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/images/palace_square.jpg",
+      "SourceId": "TouristGuideWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/",
+      "BasePath": "_content/TouristGuideWeb",
+      "RelativePath": "images/palace_square#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "21hedfhdop",
+      "Integrity": "tmacJgbx4Q8egkUMbbS1MU3uR2D2AeFdFaMPb1eYuQE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/palace_square.jpg"
+    },
+    {
+      "Identity": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/images/red_square.jpg",
+      "SourceId": "TouristGuideWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/",
+      "BasePath": "_content/TouristGuideWeb",
+      "RelativePath": "images/red_square#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "aj85m39mld",
+      "Integrity": "dozxZAjxUgx/XqwECe8aauUyoy0YnvMmeWC/6BEWluY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/red_square.jpg"
+    },
+    {
+      "Identity": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/images/russian_bridge.jpg",
+      "SourceId": "TouristGuideWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/",
+      "BasePath": "_content/TouristGuideWeb",
+      "RelativePath": "images/russian_bridge#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "6cnavm88ib",
+      "Integrity": "pqvkfM+XXp5s44DI8SboAIxSqh+iHMdmvqRyyrNiWwU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/russian_bridge.jpg"
+    },
+    {
+      "Identity": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/images/vladivostok.jpg",
+      "SourceId": "TouristGuideWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/",
+      "BasePath": "_content/TouristGuideWeb",
+      "RelativePath": "images/vladivostok#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "19nolvo9zv",
+      "Integrity": "S6MxqRZiqeCQ8P6rGfmdqEMteXu9xxR340W2L4u5mOc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/vladivostok.jpg"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "images/324671d930c2c6b747910a712de92692.s1ec5ksa6a.webp",
+      "AssetFile": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/images/324671d930c2c6b747910a712de92692.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "109926"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IAcA90tsHvN4JWbIdjHPy5zF5KwoIY/4sBeq42Nri/U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 05 May 2026 07:27:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "s1ec5ksa6a"
+        },
+        {
+          "Name": "label",
+          "Value": "images/324671d930c2c6b747910a712de92692.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-IAcA90tsHvN4JWbIdjHPy5zF5KwoIY/4sBeq42Nri/U="
+        }
+      ]
+    },
+    {
+      "Route": "images/324671d930c2c6b747910a712de92692.webp",
+      "AssetFile": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/images/324671d930c2c6b747910a712de92692.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "109926"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IAcA90tsHvN4JWbIdjHPy5zF5KwoIY/4sBeq42Nri/U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 05 May 2026 07:27:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-IAcA90tsHvN4JWbIdjHPy5zF5KwoIY/4sBeq42Nri/U="
+        }
+      ]
+    },
+    {
+      "Route": "images/4646af3618e50dcf2cbddfb325446f11.rgjqjfbfuo.webp",
+      "AssetFile": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/images/4646af3618e50dcf2cbddfb325446f11.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "143612"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9Rs9vAH5nseFg/pZ7SMGfquuKdWT3yEe40SQAMpOWz8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 05 May 2026 07:27:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rgjqjfbfuo"
+        },
+        {
+          "Name": "label",
+          "Value": "images/4646af3618e50dcf2cbddfb325446f11.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-9Rs9vAH5nseFg/pZ7SMGfquuKdWT3yEe40SQAMpOWz8="
+        }
+      ]
+    },
+    {
+      "Route": "images/4646af3618e50dcf2cbddfb325446f11.webp",
+      "AssetFile": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/images/4646af3618e50dcf2cbddfb325446f11.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "143612"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9Rs9vAH5nseFg/pZ7SMGfquuKdWT3yEe40SQAMpOWz8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 05 May 2026 07:27:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-9Rs9vAH5nseFg/pZ7SMGfquuKdWT3yEe40SQAMpOWz8="
+        }
+      ]
+    },
+    {
+      "Route": "images/Снимок экрана 2026-05-05 в 10.23.55\u202FAM.0n4nankmis.png",
+      "AssetFile": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/images/Снимок экрана 2026-05-05 в 10.23.55\u202FAM.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "738071"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xMIB3pDivIDcrb6Iu41QB+ZsjDiX/WFmfTrYvPsV6Ng=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 05 May 2026 07:27:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0n4nankmis"
+        },
+        {
+          "Name": "label",
+          "Value": "images/Снимок экрана 2026-05-05 в 10.23.55\u202FAM.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-xMIB3pDivIDcrb6Iu41QB+ZsjDiX/WFmfTrYvPsV6Ng="
+        }
+      ]
+    },
+    {
+      "Route": "images/Снимок экрана 2026-05-05 в 10.23.55\u202FAM.png",
+      "AssetFile": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/images/Снимок экрана 2026-05-05 в 10.23.55\u202FAM.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "738071"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xMIB3pDivIDcrb6Iu41QB+ZsjDiX/WFmfTrYvPsV6Ng=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 05 May 2026 07:27:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-xMIB3pDivIDcrb6Iu41QB+ZsjDiX/WFmfTrYvPsV6Ng="
+        }
+      ]
+    },
+    {
+      "Route": "images/christ_savior.jpg",
+      "AssetFile": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/images/christ_savior.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "211605"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rvRQ0BcKzem8mFuazhZDigxKSKVFUBdJDJtRUT+wSGI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 05 May 2026 07:14:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-rvRQ0BcKzem8mFuazhZDigxKSKVFUBdJDJtRUT+wSGI="
+        }
+      ]
+    },
+    {
+      "Route": "images/christ_savior.m39dwrftbm.jpg",
+      "AssetFile": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/images/christ_savior.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "211605"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rvRQ0BcKzem8mFuazhZDigxKSKVFUBdJDJtRUT+wSGI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 05 May 2026 07:14:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "m39dwrftbm"
+        },
+        {
+          "Name": "label",
+          "Value": "images/christ_savior.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-rvRQ0BcKzem8mFuazhZDigxKSKVFUBdJDJtRUT+wSGI="
+        }
+      ]
+    },
+    {
+      "Route": "images/Coat_of_arms_of_Moscow.svg.2l4acyvh2e.png",
+      "AssetFile": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/images/Coat_of_arms_of_Moscow.svg.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "486219"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Skasp16TpUKpIOPjgNI860hXc1TQEFIfpRbYn2egbTk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 05 May 2026 07:27:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2l4acyvh2e"
+        },
+        {
+          "Name": "label",
+          "Value": "images/Coat_of_arms_of_Moscow.svg.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Skasp16TpUKpIOPjgNI860hXc1TQEFIfpRbYn2egbTk="
+        }
+      ]
+    },
+    {
+      "Route": "images/Coat_of_arms_of_Moscow.svg.png",
+      "AssetFile": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/images/Coat_of_arms_of_Moscow.svg.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "486219"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Skasp16TpUKpIOPjgNI860hXc1TQEFIfpRbYn2egbTk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 05 May 2026 07:27:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Skasp16TpUKpIOPjgNI860hXc1TQEFIfpRbYn2egbTk="
+        }
+      ]
+    },
+    {
+      "Route": "images/Coat_of_Arms_of_Vladivostok.svg.o6bep6s71f.png",
+      "AssetFile": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/images/Coat_of_Arms_of_Vladivostok.svg.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "50070"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IEGRK+yNrWgqv5j2yh3AVpDh3w2aHGlR/UJ+rd34Zr8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 05 May 2026 07:27:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "o6bep6s71f"
+        },
+        {
+          "Name": "label",
+          "Value": "images/Coat_of_Arms_of_Vladivostok.svg.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-IEGRK+yNrWgqv5j2yh3AVpDh3w2aHGlR/UJ+rd34Zr8="
+        }
+      ]
+    },
+    {
+      "Route": "images/Coat_of_Arms_of_Vladivostok.svg.png",
+      "AssetFile": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/images/Coat_of_Arms_of_Vladivostok.svg.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "50070"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IEGRK+yNrWgqv5j2yh3AVpDh3w2aHGlR/UJ+rd34Zr8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 05 May 2026 07:27:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-IEGRK+yNrWgqv5j2yh3AVpDh3w2aHGlR/UJ+rd34Zr8="
+        }
+      ]
+    },
+    {
+      "Route": "images/fort.jpg",
+      "AssetFile": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/images/fort.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "54203"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"w0fOPcQkkeFVe0e+5FiXY9rDUe0dYvXP3s7hn8VT5g0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 05 May 2026 07:15:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-w0fOPcQkkeFVe0e+5FiXY9rDUe0dYvXP3s7hn8VT5g0="
+        }
+      ]
+    },
+    {
+      "Route": "images/fort.nnrjhhubzp.jpg",
+      "AssetFile": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/images/fort.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "54203"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"w0fOPcQkkeFVe0e+5FiXY9rDUe0dYvXP3s7hn8VT5g0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 05 May 2026 07:15:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "nnrjhhubzp"
+        },
+        {
+          "Name": "label",
+          "Value": "images/fort.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-w0fOPcQkkeFVe0e+5FiXY9rDUe0dYvXP3s7hn8VT5g0="
+        }
+      ]
+    },
+    {
+      "Route": "images/hermitage.jpg",
+      "AssetFile": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/images/hermitage.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "252424"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"J5TC4LZ/NnF7rC7GXHwISTUv5Hp7Lt8R+ZfNWV89Eeo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 05 May 2026 07:14:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-J5TC4LZ/NnF7rC7GXHwISTUv5Hp7Lt8R+ZfNWV89Eeo="
+        }
+      ]
+    },
+    {
+      "Route": "images/hermitage.vudkh8kgy6.jpg",
+      "AssetFile": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/images/hermitage.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "252424"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"J5TC4LZ/NnF7rC7GXHwISTUv5Hp7Lt8R+ZfNWV89Eeo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 05 May 2026 07:14:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vudkh8kgy6"
+        },
+        {
+          "Name": "label",
+          "Value": "images/hermitage.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-J5TC4LZ/NnF7rC7GXHwISTUv5Hp7Lt8R+ZfNWV89Eeo="
+        }
+      ]
+    },
+    {
+      "Route": "images/images.png",
+      "AssetFile": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/images/images.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "31689"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8mtCDosAL1hELdRh814XwbFRregCVnogv24UDcXYU9A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 05 May 2026 07:27:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8mtCDosAL1hELdRh814XwbFRregCVnogv24UDcXYU9A="
+        }
+      ]
+    },
+    {
+      "Route": "images/images.ule0q20qwg.png",
+      "AssetFile": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/images/images.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "31689"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8mtCDosAL1hELdRh814XwbFRregCVnogv24UDcXYU9A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 05 May 2026 07:27:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ule0q20qwg"
+        },
+        {
+          "Name": "label",
+          "Value": "images/images.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8mtCDosAL1hELdRh814XwbFRregCVnogv24UDcXYU9A="
+        }
+      ]
+    },
+    {
+      "Route": "images/isaac.fnrrbnk7il.jpg",
+      "AssetFile": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/images/isaac.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "222552"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RZRGsRtfVDqezagRQ1EG/HCJeSrN3Cvuh9zTSAXkDGI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 05 May 2026 07:14:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fnrrbnk7il"
+        },
+        {
+          "Name": "label",
+          "Value": "images/isaac.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-RZRGsRtfVDqezagRQ1EG/HCJeSrN3Cvuh9zTSAXkDGI="
+        }
+      ]
+    },
+    {
+      "Route": "images/isaac.jpg",
+      "AssetFile": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/images/isaac.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "222552"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RZRGsRtfVDqezagRQ1EG/HCJeSrN3Cvuh9zTSAXkDGI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 05 May 2026 07:14:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-RZRGsRtfVDqezagRQ1EG/HCJeSrN3Cvuh9zTSAXkDGI="
+        }
+      ]
+    },
+    {
+      "Route": "images/kazan_kremlin.2im233un6u.jpg",
+      "AssetFile": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/images/kazan_kremlin.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "188134"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lrIHuwPC6TDxyA6Kwd2/zY3kgU9wJ7pDu3WNGqHOxak=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 05 May 2026 07:14:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2im233un6u"
+        },
+        {
+          "Name": "label",
+          "Value": "images/kazan_kremlin.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-lrIHuwPC6TDxyA6Kwd2/zY3kgU9wJ7pDu3WNGqHOxak="
+        }
+      ]
+    },
+    {
+      "Route": "images/kazan_kremlin.jpg",
+      "AssetFile": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/images/kazan_kremlin.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "188134"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lrIHuwPC6TDxyA6Kwd2/zY3kgU9wJ7pDu3WNGqHOxak=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 05 May 2026 07:14:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-lrIHuwPC6TDxyA6Kwd2/zY3kgU9wJ7pDu3WNGqHOxak="
+        }
+      ]
+    },
+    {
+      "Route": "images/kremlin.jpg",
+      "AssetFile": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/images/kremlin.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "632613"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nJtE9O+eDF1ZJJh6yOHrslGC+4iaGUuo/vw29iLr4uU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 05 May 2026 07:28:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-nJtE9O+eDF1ZJJh6yOHrslGC+4iaGUuo/vw29iLr4uU="
+        }
+      ]
+    },
+    {
+      "Route": "images/kremlin.kel5gs2erj.jpg",
+      "AssetFile": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/images/kremlin.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "632613"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nJtE9O+eDF1ZJJh6yOHrslGC+4iaGUuo/vw29iLr4uU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 05 May 2026 07:28:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "kel5gs2erj"
+        },
+        {
+          "Name": "label",
+          "Value": "images/kremlin.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-nJtE9O+eDF1ZJJh6yOHrslGC+4iaGUuo/vw29iLr4uU="
+        }
+      ]
+    },
+    {
+      "Route": "images/kul_sharif.90u9cx5i4f.jpg",
+      "AssetFile": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/images/kul_sharif.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "108591"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1396aZAZ3pP0d7MsDfh/v64TEJ9KXcaX7evjyA2sZhk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 05 May 2026 07:14:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "90u9cx5i4f"
+        },
+        {
+          "Name": "label",
+          "Value": "images/kul_sharif.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1396aZAZ3pP0d7MsDfh/v64TEJ9KXcaX7evjyA2sZhk="
+        }
+      ]
+    },
+    {
+      "Route": "images/kul_sharif.jpg",
+      "AssetFile": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/images/kul_sharif.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "108591"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1396aZAZ3pP0d7MsDfh/v64TEJ9KXcaX7evjyA2sZhk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 05 May 2026 07:14:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1396aZAZ3pP0d7MsDfh/v64TEJ9KXcaX7evjyA2sZhk="
+        }
+      ]
+    },
+    {
+      "Route": "images/moscow.jpg",
+      "AssetFile": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/images/moscow.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3637215"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/yAHj5QhqLHZtRrymv6CmT/lyXNW8B2PfKrmp0KCfIk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 05 May 2026 07:11:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-/yAHj5QhqLHZtRrymv6CmT/lyXNW8B2PfKrmp0KCfIk="
+        }
+      ]
+    },
+    {
+      "Route": "images/moscow.xkl72dyf8u.jpg",
+      "AssetFile": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/images/moscow.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3637215"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/yAHj5QhqLHZtRrymv6CmT/lyXNW8B2PfKrmp0KCfIk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 05 May 2026 07:11:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xkl72dyf8u"
+        },
+        {
+          "Name": "label",
+          "Value": "images/moscow.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-/yAHj5QhqLHZtRrymv6CmT/lyXNW8B2PfKrmp0KCfIk="
+        }
+      ]
+    },
+    {
+      "Route": "images/palace_square.21hedfhdop.jpg",
+      "AssetFile": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/images/palace_square.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "133520"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tmacJgbx4Q8egkUMbbS1MU3uR2D2AeFdFaMPb1eYuQE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 05 May 2026 07:14:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "21hedfhdop"
+        },
+        {
+          "Name": "label",
+          "Value": "images/palace_square.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-tmacJgbx4Q8egkUMbbS1MU3uR2D2AeFdFaMPb1eYuQE="
+        }
+      ]
+    },
+    {
+      "Route": "images/palace_square.jpg",
+      "AssetFile": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/images/palace_square.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "133520"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tmacJgbx4Q8egkUMbbS1MU3uR2D2AeFdFaMPb1eYuQE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 05 May 2026 07:14:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-tmacJgbx4Q8egkUMbbS1MU3uR2D2AeFdFaMPb1eYuQE="
+        }
+      ]
+    },
+    {
+      "Route": "images/red_square.aj85m39mld.jpg",
+      "AssetFile": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/images/red_square.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "207931"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dozxZAjxUgx/XqwECe8aauUyoy0YnvMmeWC/6BEWluY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 05 May 2026 07:14:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "aj85m39mld"
+        },
+        {
+          "Name": "label",
+          "Value": "images/red_square.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dozxZAjxUgx/XqwECe8aauUyoy0YnvMmeWC/6BEWluY="
+        }
+      ]
+    },
+    {
+      "Route": "images/red_square.jpg",
+      "AssetFile": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/images/red_square.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "207931"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dozxZAjxUgx/XqwECe8aauUyoy0YnvMmeWC/6BEWluY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 05 May 2026 07:14:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dozxZAjxUgx/XqwECe8aauUyoy0YnvMmeWC/6BEWluY="
+        }
+      ]
+    },
+    {
+      "Route": "images/russian_bridge.6cnavm88ib.jpg",
+      "AssetFile": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/images/russian_bridge.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "135597"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pqvkfM+XXp5s44DI8SboAIxSqh+iHMdmvqRyyrNiWwU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 05 May 2026 07:14:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6cnavm88ib"
+        },
+        {
+          "Name": "label",
+          "Value": "images/russian_bridge.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-pqvkfM+XXp5s44DI8SboAIxSqh+iHMdmvqRyyrNiWwU="
+        }
+      ]
+    },
+    {
+      "Route": "images/russian_bridge.jpg",
+      "AssetFile": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/images/russian_bridge.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "135597"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pqvkfM+XXp5s44DI8SboAIxSqh+iHMdmvqRyyrNiWwU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 05 May 2026 07:14:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-pqvkfM+XXp5s44DI8SboAIxSqh+iHMdmvqRyyrNiWwU="
+        }
+      ]
+    },
+    {
+      "Route": "images/vladivostok.19nolvo9zv.jpg",
+      "AssetFile": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/images/vladivostok.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "163436"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"S6MxqRZiqeCQ8P6rGfmdqEMteXu9xxR340W2L4u5mOc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 05 May 2026 07:14:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "19nolvo9zv"
+        },
+        {
+          "Name": "label",
+          "Value": "images/vladivostok.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-S6MxqRZiqeCQ8P6rGfmdqEMteXu9xxR340W2L4u5mOc="
+        }
+      ]
+    },
+    {
+      "Route": "images/vladivostok.jpg",
+      "AssetFile": "/Users/lilyaka/Desktop/раб.тетради/пкс/sem2/kr/kr4/TouristGuideWeb/wwwroot/images/vladivostok.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "163436"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"S6MxqRZiqeCQ8P6rGfmdqEMteXu9xxR340W2L4u5mOc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 05 May 2026 07:14:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-S6MxqRZiqeCQ8P6rGfmdqEMteXu9xxR340W2L4u5mOc="
+        }
+      ]
+    }
+  ]
+}
