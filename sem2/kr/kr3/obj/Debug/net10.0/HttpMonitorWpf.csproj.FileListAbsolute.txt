@@ -71,3 +71,4 @@
 /Users/deniskosourov/Downloads/PKS-main/sem2/kr/kr3/obj/Debug/net10.0/HttpMonitorWpf.pdb
 /Users/deniskosourov/Downloads/PKS-main/sem2/kr/kr3/obj/Debug/net10.0/HttpMonitorWpf.genruntimeconfig.cache
 /Users/deniskosourov/Downloads/PKS-main/sem2/kr/kr3/obj/Debug/net10.0/ref/HttpMonitorWpf.dll
+/Users/deniskosourov/Downloads/PKS-main/sem2/kr/kr3/obj/Debug/net10.0/HttpMonitorWpf.sourcelink.json

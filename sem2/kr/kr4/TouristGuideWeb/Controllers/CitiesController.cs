@@ -17,14 +17,20 @@ public class CitiesController : Controller
     // GET: /Cities
     public async Task<IActionResult> Index(string? searchString)
     {
-        var cities = from c in _context.Cities select c;
+        ViewData["CurrentFilter"] = searchString;
 
-        if (!String.IsNullOrEmpty(searchString))
+        var cities = _context.Cities.AsQueryable();
+
+        if (!string.IsNullOrWhiteSpace(searchString))
         {
-            cities = cities.Where(c => c.Name.Contains(searchString));
+            var query = searchString.Trim();
+            cities = cities.Where(c =>
+                EF.Functions.Like(c.Name, $"%{query}%") ||
+                EF.Functions.Like(c.Region, $"%{query}%") ||
+                EF.Functions.Like(c.Description, $"%{query}%"));
         }
 
-        return View(await cities.ToListAsync());
+        return View(await cities.OrderBy(c => c.Name).ToListAsync());
     }
 
     // GET: /Cities/Details/5

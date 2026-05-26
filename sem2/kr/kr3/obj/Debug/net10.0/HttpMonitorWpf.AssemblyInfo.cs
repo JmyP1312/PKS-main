@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HttpMonitorWpf")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+021a376b22fa41f11f234845acac3ee66ea5dba9")]
 [assembly: System.Reflection.AssemblyProductAttribute("HttpMonitorWpf")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HttpMonitorWpf")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

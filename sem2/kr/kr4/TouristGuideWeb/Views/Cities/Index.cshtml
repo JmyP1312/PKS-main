@@ -5,14 +5,21 @@
 
 <h2 style="margin-bottom: 1.5rem;">Список городов</h2>
 
-<!--<form asp-action="Index" method="get" class="search-form">
-    <input type="text" name="searchString" placeholder="Поиск по названию города..." value="@ViewData["CurrentFilter"]" />
+<form asp-action="Index" method="get" class="search-form">
+    <input type="text" name="searchString" placeholder="Поиск по городу, региону или описанию..." value="@ViewData["CurrentFilter"]" />
     <button type="submit" class="btn">Поиск</button>
-    if (ViewData["CurrentFilter"] != null)
     {
         <a asp-action="Index" class="btn">Сбросить</a>
     }
-</form>-->
+</form>
+
+@if (!Model.Any())
+{
+    <div class="info-block">
+        <h3>Города не найдены</h3>
+        <a asp-action="Index" class="btn">Показать все города</a>
+    </div>
+}
 
 <div class="grid">
     @foreach (var city in Model)

@@ -42,7 +42,9 @@ public class LinesController(ProductionDbContext context) : ControllerBase
     [HttpPut("{id:int}/status")]
     public async Task<IActionResult> Status(int id, LineStatusRequest request)
     {
-        var line = await context.ProductionLines.FindAsync(id);
+        var line = await context.ProductionLines
+            .Include(x => x.CurrentWorkOrder)
+            .FirstOrDefaultAsync(x => x.Id == id);
         if (line is null)
         {
             return NotFound();
@@ -56,6 +58,11 @@ public class LinesController(ProductionDbContext context) : ControllerBase
         line.Status = request.Status;
         if (line.Status == "Stopped")
         {
+            if (line.CurrentWorkOrder is not null && line.CurrentWorkOrder.Status == "InProgress")
+            {
+                line.CurrentWorkOrder.Status = "Pending";
+            }
+
             line.CurrentWorkOrderId = null;
         }
 

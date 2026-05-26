@@ -43,7 +43,16 @@
         <form id="materialForm" class="inline-form">
             <input name="name" placeholder="Название" required>
             <input name="quantity" type="number" step="0.001" min="0" placeholder="Количество" required>
-            <input name="unit" placeholder="Ед. изм." required>
+            <select name="unit" required>
+                <option value="">Ед. изм.</option>
+                <option value="кг">кг</option>
+                <option value="шт">шт</option>
+                <option value="м">м</option>
+                <option value="л">л</option>
+                <option value="м2">м²</option>
+                <option value="м3">м³</option>
+                <option value="комплект">комплект</option>
+            </select>
             <input name="minStock" type="number" step="0.001" min="0" placeholder="Мин. запас" required>
             <button class="btn btn-primary" type="submit">Добавить</button>
         </form>

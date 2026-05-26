@@ -54,6 +54,11 @@ public class OrdersController(ProductionDbContext context) : ControllerBase
     [HttpPost]
     public async Task<IActionResult> Create(OrderCreateRequest request)
     {
+        if (request.Quantity <= 0)
+        {
+            return BadRequest("Количество должно быть больше нуля.");
+        }
+
         var product = await context.Products
             .Include(x => x.ProductMaterials)
             .ThenInclude(x => x.Material)
@@ -70,6 +75,16 @@ public class OrdersController(ProductionDbContext context) : ControllerBase
         if (request.LineId is not null && line is null)
         {
             return BadRequest("Производственная линия не найдена.");
+        }
+
+        if (line is { Status: not "Active" })
+        {
+            return BadRequest("Можно назначить заказ только на активную производственную линию.");
+        }
+
+        if (line?.CurrentWorkOrderId is not null)
+        {
+            return BadRequest("Выбранная производственная линия уже занята.");
         }
 
         var shortages = product.ProductMaterials
@@ -103,6 +118,13 @@ public class OrdersController(ProductionDbContext context) : ControllerBase
         }
 
         context.WorkOrders.Add(order);
+        await context.SaveChangesAsync();
+
+        if (line is not null)
+        {
+            line.CurrentWorkOrderId = order.Id;
+        }
+
         await context.SaveChangesAsync();
 
         return CreatedAtAction(nameof(Details), new { id = order.Id }, new { order.Id, order.EstimatedEndDate });
@@ -144,6 +166,16 @@ public class OrdersController(ProductionDbContext context) : ControllerBase
         if (order is null)
         {
             return NotFound();
+        }
+
+        if (order.Status == "Cancelled")
+        {
+            return BadRequest("Заказ уже отменён.");
+        }
+
+        if (order.Status == "Completed")
+        {
+            return BadRequest("Завершённый заказ нельзя отменить.");
         }
 
         // Return materials to warehouse
@@ -224,11 +256,36 @@ public class OrdersController(ProductionDbContext context) : ControllerBase
     {
         var order = await context.WorkOrders
             .Include(x => x.Product)
+            .Include(x => x.ProductionLine)
             .FirstOrDefaultAsync(x => x.Id == id);
         if (order is null) return NotFound();
 
+        if (order.ProductionLine is null)
+        {
+            return BadRequest("Сначала назначьте заказ на производственную линию.");
+        }
+
+        if (order.ProductionLine.Status != "Active")
+        {
+            return BadRequest("Производственная линия должна быть активной.");
+        }
+
+        if (order.ProductionLine.CurrentWorkOrderId is not null && order.ProductionLine.CurrentWorkOrderId != order.Id)
+        {
+            return BadRequest("Производственная линия занята другим заказом.");
+        }
+
+        if (order.Status is "Completed" or "Cancelled")
+        {
+            return BadRequest("Этот заказ уже нельзя запустить.");
+        }
+
+        var minutes = (order.Quantity * order.Product.ProductionTimePerUnit) / order.ProductionLine.EfficiencyFactor;
+        order.StartDate = DateTime.Now;
+        order.EstimatedEndDate = order.StartDate.AddMinutes(minutes);
         order.Status = "InProgress";
         order.ProgressPercent = 0;
+        order.ProductionLine.CurrentWorkOrderId = order.Id;
 
         await context.SaveChangesAsync();
         return Ok(new { order.Id, order.Status, order.ProgressPercent });
@@ -250,9 +307,15 @@ public class OrdersController(ProductionDbContext context) : ControllerBase
             .FirstOrDefaultAsync(x => x.Id == id);
         if (order is null) return NotFound("Заказ не найден");
 
+        if (order.Status != "Pending")
+            return BadRequest("Назначать линию можно только ожидающему заказу");
+
         order.ProductionLineId = line.Id;
         line.CurrentWorkOrderId = order.Id;
         line.Status = "Active";
+
+        var minutes = (order.Quantity * order.Product.ProductionTimePerUnit) / line.EfficiencyFactor;
+        order.EstimatedEndDate = order.StartDate.AddMinutes(minutes);
 
         await context.SaveChangesAsync();
         return Ok(new { order.Id, line = line.Name });

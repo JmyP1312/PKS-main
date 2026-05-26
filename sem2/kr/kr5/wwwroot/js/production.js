@@ -12,7 +12,17 @@ const api = async (url, options = {}) => {
   });
   if (!response.ok) {
     const text = await response.text();
-    throw new Error(text || "Ошибка запроса");
+    let message = text || "Ошибка запроса";
+    try {
+      const json = JSON.parse(text);
+      message = json.message || json.title || message;
+      if (Array.isArray(json.shortages)) {
+        message += ` ${json.shortages.join("; ")}`;
+      }
+    } catch {
+      // Keep the plain response text.
+    }
+    throw new Error(message);
   }
   return response.status === 204 ? null : response.json();
 };
@@ -72,22 +82,32 @@ function renderCategories(categories) {
 }
 
 function renderMaterials() {
-  document.getElementById("materialsTable").innerHTML = state.materials.map(m => `
+  document.getElementById("materialsTable").innerHTML = state.materials.length ? state.materials.map(m => `
     <tr>
       <td>${m.name}</td>
       <td><span class="stock-pill ${m.isLowStock ? "stock-low" : "stock-ok"}">${m.quantity} / ${m.minStock}</span></td>
       <td>${m.unit}</td>
-      <td><button class="btn btn-soft" type="button" onclick="replenishMaterial(${m.id})">Пополнить</button></td>
+      <td>
+        <button class="btn btn-soft" type="button" onclick="replenishMaterial(${m.id})">Пополнить</button>
+        <button class="btn btn-soft" type="button" onclick="deleteMaterial(${m.id})">Удалить</button>
+      </td>
     </tr>
-  `).join("");
+  `).join("") : `<tr><td colspan="4">Материалы не найдены</td></tr>`;
+}
+
+async function deleteMaterial(id) {
+  if (!confirm("Удалить материал?")) return;
+  await api(`/api/materials/${id}`, { method: "DELETE" });
+  showToast("Материал удалён");
+  loadAll();
 }
 
 function renderProducts() {
-  document.getElementById("productsTable").innerHTML = state.products.map(p => `
+  document.getElementById("productsTable").innerHTML = state.products.length ? state.products.map(p => `
     <tr onclick="showProductMaterials(${p.id})">
       <td>${p.name}</td><td>${p.prodTime}</td><td>${p.category}</td>
     </tr>
-  `).join("");
+  `).join("") : `<tr><td colspan="3">Продукты не найдены</td></tr>`;
 }
 
 function renderProductMaterialInputs() {
@@ -114,7 +134,7 @@ function renderOrderForm() {
 }
 
 function renderOrders() {
-  document.getElementById("ordersTable").innerHTML = state.orders.map(o => `
+  document.getElementById("ordersTable").innerHTML = state.orders.length ? state.orders.map(o => `
     <tr>
       <td>#${o.id}</td><td>${o.product}</td><td>${o.quantity}</td>
       <td><span class="badge-status status-${o.status.toLowerCase()}">${statusLabel(o.status)}</span></td>
@@ -122,11 +142,12 @@ function renderOrders() {
       <td>
         ${o.status === "Pending" && (!o.line || o.line === "Не назначена") ? `<button class="btn btn-soft" type="button" onclick="assignOrder(${o.id})">Назначить</button>` : ""}
         ${o.status === "Pending" && o.line !== "Не назначена" ? `<button class="btn btn-soft" type="button" onclick="startOrder(${o.id})">Запустить</button>` : ""}
-        <button class="btn btn-soft" type="button" onclick="cancelOrder(${o.id})">Отменить</button>
+        ${o.status === "InProgress" ? `<button class="btn btn-soft" type="button" onclick="updateProgress(${o.id}, ${o.progressPercent})">Прогресс</button>` : ""}
+        ${o.status !== "Completed" && o.status !== "Cancelled" ? `<button class="btn btn-soft" type="button" onclick="cancelOrder(${o.id})">Отменить</button>` : ""}
         <button class="btn btn-soft" type="button" onclick="showOrderDetails(${o.id})">Детали</button>
       </td>
     </tr>
-  `).join("");
+  `).join("") : `<tr><td colspan="6">Активных заказов нет</td></tr>`;
 }
 
 async function renderLines() {
@@ -166,7 +187,10 @@ function updateOrderCalculation() {
   const product = state.products.find(x => x.id == document.getElementById("orderProduct").value);
   const line = state.availableLines.find(x => x.id == document.getElementById("orderLine").value);
   const quantity = Number(document.getElementById("orderQuantity").value || 0);
-  if (!product || !quantity) return;
+  if (!product || !quantity) {
+    document.getElementById("orderCalculation").textContent = "Выберите продукт и количество";
+    return;
+  }
   const efficiency = line?.efficiencyFactor || 1;
   const minutes = Math.ceil((quantity * product.prodTime) / efficiency);
   document.getElementById("orderCalculation").textContent = `Расчёт: ${quantity} x ${product.prodTime} мин / ${efficiency} = ${minutes} мин`;
@@ -192,9 +216,11 @@ async function startOrder(id) {
     showToast("Сначала назначьте заказ на линию");
     return;
   }
-  await api(`/api/orders/${id}/start`, { method: "PUT" });
-  showToast("Заказ запущен в производство");
-  loadAll();
+  try {
+    await api(`/api/orders/${id}/start`, { method: "PUT" });
+    showToast("Заказ запущен в производство");
+    loadAll();
+  } catch (error) { showToast(error.message); }
 }
 
 async function assignOrder(id) {
@@ -204,15 +230,34 @@ async function assignOrder(id) {
   if (!lineId) return;
   const index = parseInt(lineId) - 1;
   if (index < 0 || index >= availableLines.length) { showToast("Неверный номер линии"); return; }
-  await api(`/api/orders/${id}/assign`, { method: "PUT", body: JSON.stringify({ lineId: availableLines[index].id }) });
-  showToast("Заказ назначен на линию");
-  loadAll();
+  try {
+    await api(`/api/orders/${id}/assign`, { method: "PUT", body: JSON.stringify({ lineId: availableLines[index].id }) });
+    showToast("Заказ назначен на линию");
+    loadAll();
+  } catch (error) { showToast(error.message); }
 }
 
 async function cancelOrder(id) {
-  await api(`/api/orders/${id}/cancel`, { method: "PUT", body: "{}" });
-  showToast("Заказ отменён");
-  loadAll();
+  try {
+    await api(`/api/orders/${id}/cancel`, { method: "PUT", body: "{}" });
+    showToast("Заказ отменён");
+    loadAll();
+  } catch (error) { showToast(error.message); }
+}
+
+async function updateProgress(id, current) {
+  const value = prompt("Новый прогресс выполнения, %", current);
+  if (value === null) return;
+  const percent = Number(value);
+  if (Number.isNaN(percent)) {
+    showToast("Введите число от 0 до 100");
+    return;
+  }
+  try {
+    await api(`/api/orders/${id}/progress`, { method: "PUT", body: JSON.stringify({ percent }) });
+    showToast("Прогресс обновлён");
+    loadAll();
+  } catch (error) { showToast(error.message); }
 }
 
 async function showOrderDetails(id) {
@@ -231,15 +276,19 @@ async function showOrderDetails(id) {
 }
 
 async function setLineStatus(id, status) {
-  await api(`/api/lines/${id}/status`, { method: "PUT", body: JSON.stringify({ status }) });
-  showToast("Статус линии обновлён");
-  loadAll();
+  try {
+    await api(`/api/lines/${id}/status`, { method: "PUT", body: JSON.stringify({ status }) });
+    showToast("Статус линии обновлён");
+    loadAll();
+  } catch (error) { showToast(error.message); }
 }
 
 async function setEfficiency(id, efficiencyFactor) {
-  await api(`/api/lines/${id}/efficiency`, { method: "PUT", body: JSON.stringify({ efficiencyFactor: Number(efficiencyFactor) }) });
-  showToast("Коэффициент эффективности сохранён");
-  loadAll();
+  try {
+    await api(`/api/lines/${id}/efficiency`, { method: "PUT", body: JSON.stringify({ efficiencyFactor: Number(efficiencyFactor) }) });
+    showToast("Коэффициент эффективности сохранён");
+    loadAll();
+  } catch (error) { showToast(error.message); }
 }
 
 async function setAutoMode(id, isAutomatic) {
@@ -258,9 +307,34 @@ async function rescheduleOrder(id, value) {
 document.getElementById("materialForm").addEventListener("submit", async event => {
   event.preventDefault();
   const form = new FormData(event.target);
+  const name = (form.get("name") || "").toString().trim();
+  const quantity = Number(form.get("quantity"));
+  const unit = (form.get("unit") || "").toString().trim();
+  const minStock = Number(form.get("minStock"));
+
+  if (!name) {
+    showToast("Название материала обязательно.");
+    return;
+  }
+
+  if (!unit) {
+    showToast("Единица измерения обязательна.");
+    return;
+  }
+
+  if (Number.isNaN(quantity) || quantity < 0) {
+    showToast("Количество должно быть числом не меньше 0.");
+    return;
+  }
+
+  if (Number.isNaN(minStock) || minStock < 0) {
+    showToast("Мин. запас должен быть числом не меньше 0.");
+    return;
+  }
+
   await api("/api/materials", {
     method: "POST",
-    body: JSON.stringify({ name: form.get("name"), quantity: Number(form.get("quantity")), unit: form.get("unit"), minStock: Number(form.get("minStock")) })
+    body: JSON.stringify({ name, quantity, unit, minStock })
   });
   event.target.reset();
   showToast("Материал добавлен");

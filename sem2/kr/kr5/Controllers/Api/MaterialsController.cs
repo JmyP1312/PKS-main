@@ -2,6 +2,7 @@ using kr5.Data;
 using kr5.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Text.RegularExpressions;
 
 namespace kr5.Controllers.Api;
 
@@ -9,6 +10,8 @@ namespace kr5.Controllers.Api;
 [Route("api/materials")]
 public class MaterialsController(ProductionDbContext context) : ControllerBase
 {
+    private static readonly string[] AllowedUnits = new[] { "кг", "шт", "м", "л", "м2", "м3", "комплект" };
+
     [HttpGet]
     public async Task<IActionResult> Get([FromQuery(Name = "low_stock")] bool lowStock = false)
     {
@@ -43,11 +46,38 @@ public class MaterialsController(ProductionDbContext context) : ControllerBase
             return BadRequest("Название материала обязательно.");
         }
 
+        var name = request.Name.Trim();
+        if (!Regex.IsMatch(name, @"^[\p{L}0-9 \-]+$"))
+        {
+            return BadRequest("Название материала должно содержать только буквы, цифры, пробелы и дефисы.");
+        }
+
+        if (await context.Materials.AnyAsync(x => x.Name == name))
+        {
+            return BadRequest("Материал с таким названием уже существует.");
+        }
+
+        var unit = request.Unit?.Trim();
+        if (string.IsNullOrWhiteSpace(unit) || !AllowedUnits.Contains(unit))
+        {
+            return BadRequest($"Единица измерения должна быть одной из: {string.Join(", ", AllowedUnits)}.");
+        }
+
+        if (request.Quantity < 0)
+        {
+            return BadRequest("Количество не может быть отрицательным.");
+        }
+
+        if (request.MinStock < 0)
+        {
+            return BadRequest("Мин. запас не может быть отрицательным.");
+        }
+
         var material = new Material
         {
-            Name = request.Name.Trim(),
+            Name = name,
             Quantity = request.Quantity,
-            UnitOfMeasure = request.Unit,
+            UnitOfMeasure = unit,
             MinimalStock = request.MinStock
         };
 
@@ -74,6 +104,28 @@ public class MaterialsController(ProductionDbContext context) : ControllerBase
 
         await context.SaveChangesAsync();
         return Ok(new { material.Id, material.Quantity });
+    }
+
+    [HttpDelete("{id:int}")]
+    public async Task<IActionResult> Delete(int id)
+    {
+        var material = await context.Materials
+            .Include(x => x.ProductMaterials)
+            .FirstOrDefaultAsync(x => x.Id == id);
+
+        if (material is null)
+        {
+            return NotFound();
+        }
+
+        if (material.ProductMaterials.Any())
+        {
+            return BadRequest("Нельзя удалить материал, который используется в продуктах.");
+        }
+
+        context.Materials.Remove(material);
+        await context.SaveChangesAsync();
+        return NoContent();
     }
 }
 
