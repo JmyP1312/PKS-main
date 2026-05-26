@@ -34,7 +34,7 @@
 
 ## Стек технологий
 
-- C# / .NET 9
+- C# / .NET 10
 - ASP.NET Core MVC
 - Entity Framework Core
 - SQLite
